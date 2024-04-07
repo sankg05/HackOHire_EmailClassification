@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import pipeline
 import requests
 
-API_TOKEN = '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'
+API_TOKEN = ''
 
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-mnli"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
