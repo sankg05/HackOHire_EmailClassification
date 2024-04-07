@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Extension",
+  "version": "1.0",
+  "description": "An extension to access Gmail mails",
+  "permissions": ["identity","tabs","storage"],
+  "host_permissions":[
+    "http://127.0.0.1:5000/*",
+    "http://localhost:5000/*"
+  ],
+  "background": {
+    "service_worker": "Back.js"
+  },
+  "oauth2": {
+    "client_id": "368033878555-df4g1eav3t5k34tg6qfbv6ut1u9nk1ke.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/gmail.modify",
+      "https://mail.google.com/"
+      
+
+    ]
+  },
+  
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
+
+
+
+
+
