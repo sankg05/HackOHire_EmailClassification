@@ -1,6 +1,6 @@
 import requests
 
-API_TOKEN = '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'
+API_TOKEN = ''
 
 API_URL = "https://api-inference.huggingface.co/models/MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
