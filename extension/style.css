@@ -4,17 +4,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 100vh; */
-  background-color: #f0f0f0;
+  border-radius: 20px;
+  background: url('images1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 /* #00aeef and #00395d */
 .container {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 30px;
+  border-radius: 20px;
+  padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   
+}
+
+.container-box {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .5);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #ECFFFF;
 }
 
 header {
@@ -48,13 +60,16 @@ input {
   padding: 7px;
   border-radius: 6px;
   font-size: 13px;
-  background: #fbfbfb;
+  background: transparent;
   border: 2px solid transparent;
   height: 18px;
   box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+  color: #fff;
+  transition: 0.5s;
   :focus{
-      border: 2px solid #000;
+      border: 2px solid #00aeef;
       border-radius: 4px;
+      color: #fff;
   }
 }
 
@@ -68,4 +83,18 @@ footer {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+}
+
+.btnLogin-popup {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.btnLogin-popup:hover {
+  background: #fff;
+  color: #000;
+  /* color: #fff; */
 }
